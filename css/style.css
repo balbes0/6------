@@ -80,3 +80,107 @@ button:hover {
 button:active {
     background-color: #ee8d1f;
 }
+body {
+    background-color: #f1bc7f;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    margin: 20px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+header img {
+    height: 50px;
+    margin-left: 20px;
+}
+header button {
+    background-color: transparent;
+    border: none;
+    border-radius: 20px;
+    font-size: 18px;
+    padding: 10px 20px;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+header button:hover {
+    background-color: #E79F4A;
+    cursor: pointer;
+}
+.div2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 20px;
+    gap: 20px;
+}
+.div3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.redtextdiv3 {
+    font-weight: bold;
+    color: red;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.div4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.div4 button {
+    background-color: #E79F4A;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+.div4 button:hover {
+    background-color: #ee8d1f;
+    cursor: pointer;
+}
+.img {
+    max-width: 100%;
+    height: auto;
+}
+/* Медиа-запросы */
+@media screen and (max-width: 1023px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header img {
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    header button {
+        margin: 5px;
+    }
+
+    .div2 {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Для телефонов */
+@media screen and (max-width: 767px) {
+    header button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+}
